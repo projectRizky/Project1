@@ -1,0 +1,38 @@
+{
+    "env": {
+      "commonjs": true,
+      "es2021": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": ["airbnb-base"],
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
+    "rules": {
+      "linebreak-style": "off",
+      "no-unused-vars": "warn",
+      "no-underscore-dangle": "off",
+      "import/no-extraneous-dependencies": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "src/Domains/**",
+          "src/Applications/security/**",
+          "src/Applications/use_case/LogoutUserUseCase.js",
+          "src/Applications/use_case/RefreshAuthenticationUseCase.js"
+        ],
+        "rules": {
+          "no-unused-vars": "off",
+          "class-methods-use-this": "off"
+        }
+      },
+      {
+        "files": ["src/app.js"],
+        "rules": {
+          "no-console": "off"
+        }
+      }
+    ]
+  }

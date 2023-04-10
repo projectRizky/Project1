@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "developer",
+    "password": "developer",
+    "database": "propedia_db_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "developer",
+    "password": "developer",
+    "database": "propedia_db_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "developer",
+    "password": "developer",
+    "database": "propedia_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
